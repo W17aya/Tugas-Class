@@ -15,13 +15,16 @@ int main(){
 	
 	RODITA.nama    ="Hotel Rodita ";
 	RODITA.bintang = " bintang 3 ";
-	HBI.bintang    = " 1 ";
+	HBI.nama       = "Hotel HBI ";
+	HBI.bintang    = " bintang 1 ";
 	GRANDDAFAM.bintang = " 4 ";
 
 
 	cout << (RODITA.nama);
 	cout << (RODITA.bintang);
     RODITA.lokasi("Banjarbaru");
+    
+    cout<< (HBI.nama);
     cout << (HBI.bintang);
     HBI.lokasi("BJM");
 
