@@ -1,24 +1,27 @@
 #include <iostream>
-#include <iostream>
+#include <string>
 using namespace std;
 
-class Hotel{
+class HOTEL{
 	public:
-	
-	string kelasHotel;
-	int JumlahKamar;
-	void kota (string letak);
+	void lokasi(string letak);
+	string bintang;
+
 };
 
 int main(){
-	Hotel Montana_Syariah;
-	Hotel BanjarmasinIndah;
+	
+	HOTEL RODITA,HBI,GRANDDAFAM;
 
-	Montana_Syariah.kelasHotel="DELUXE";
-	cout<<(Montana_Syariah.kelasHotel)<<endl;
-	Montana_Syariah.kota("Banjarmasin");
+	RODITA.bintang = " 3 ";
+	HBI.bintang    = " 1 ";
+	GRANDDAFAM.bintang = " 4 ";
+
+	cout << (RODITA.bintang);
+    RODITA.lokasi("Banjarbaru");
+
+
 }
-
-	void Hotel::kota(string letak ){
-	cout << "di" <<letak;
-	}
+void HOTEL::lokasi(string letak){
+	cout<<"di "<<letak<<"!!"<<endl;
+}
