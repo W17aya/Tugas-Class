@@ -5,20 +5,25 @@ using namespace std;
 class HOTEL{
 	public:
 	void lokasi(string letak);
-	string bintang;
+	string bintang,nama;
 
 };
 
 int main(){
 	
 	HOTEL RODITA,HBI,GRANDDAFAM;
-
-	RODITA.bintang = " 3 ";
+	
+	RODITA.nama    ="Hotel Rodita ";
+	RODITA.bintang = " bintang 3 ";
 	HBI.bintang    = " 1 ";
 	GRANDDAFAM.bintang = " 4 ";
 
+
+	cout << (RODITA.nama);
 	cout << (RODITA.bintang);
     RODITA.lokasi("Banjarbaru");
+    cout << (HBI.bintang);
+    HBI.lokasi("BJM");
 
 
 }
