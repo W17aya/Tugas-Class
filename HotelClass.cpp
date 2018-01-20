@@ -17,7 +17,8 @@ int main(){
 	RODITA.bintang = " bintang 3 ";
 	HBI.nama       = "Hotel HBI ";
 	HBI.bintang    = " bintang 1 ";
-	GRANDDAFAM.bintang = " 4 ";
+	GRANDDAFAM.nama= "HOTEL GRANDDAFAM";
+	GRANDDAFAM.bintang = " bintang 4 ";
 
 
 	cout << (RODITA.nama);
@@ -26,9 +27,11 @@ int main(){
     
     cout<< (HBI.nama);
     cout << (HBI.bintang);
-    HBI.lokasi("BJM");
+    HBI.lokasi("Banjarmasin");
 
-
+	cout<< (GRANDDAFAM.nama);
+	cout<< (GRANDDAFAM.bintang);
+	GRANDDAFAM.lokasi("Martapura");
 }
 void HOTEL::lokasi(string letak){
 	cout<<"di "<<letak<<"!!"<<endl;
